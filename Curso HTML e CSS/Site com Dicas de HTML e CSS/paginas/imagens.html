@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <title>Como adicionar imagens</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <h1>&#129299 Como utilizar imagens em HTML &#x1F4F7</h1>
+    <h2>Clique <a href="../index.html">AQUI</a> para voltar a página inicial</h2>
+    <p>As Imagens abaixo, foram anexados no site por uma pasta, utilizando imagens locais, utilizando a tag img, como
+        atributos src para passar a localização da imagem local, e alt para informar a descrição da imagem.</p>
+    <h1><img src="../imagens/html5.png" alt="Logo HTML 5"> <img src="../imagens/css.png" alt="Logo CSS"></h1>
+    <!--Esta linha adiciona duas imagens locais na página-->
+    <p>
+        Também podemos utilizar imagens externas utilizando links, um exemplo é a imagem abaixo, que está sendo
+        "puxada" de outro site. <br> A imagem original era muito grande, para deixar do tamanho das imagens acima,
+        utilizei os atributos width e height informando a quantidade de pixels que eu quero utilizar na imagem.
+    </p> <!--A tag <address> serva para dizer que aquele texto serve para direcionar para outra página-->
+    <h1><img src="https://freesvg.org/img/1486640684.png" width="256" height="256" alt="Logo JavaScript"></h1>
+    <!--width serve para definir a largura da imagem e height serve para definir a altura da imagem-->
+    <!--Esta linha adiciona uma imagem utilizando um link da web-->
+    <h2>Imagens dinâmicas</h2>
+    <p>Para criar imagens dinâmicas, utiliza a tag picture, esta tag permite você adicionar uma imagem dentro do corpo
+        dela, contudo permite você adicionar várias source media type, (camadas) para deixar a imagem dinâmica. <br>Onde se utiliza
+        media  como o tamanho de parâmentro, srcset é a imagem que vai entrar no lugar da antiga e type o formato da imagem.
+        Exemplo:</p>
+    <p>
+        <picture>
+            <source media="(max-width: 625px)" srcset="../imagens/imagem-p.png" type="image/png">
+            <source media="(max-width: 1025px)" srcset="../imagens/imagem-m.png" type="image/png">
+            <img src="../imagens/imagem-g.png" alt="Imagem grande">
+        </picture>
+    </p>
+</body>
+
+</html>

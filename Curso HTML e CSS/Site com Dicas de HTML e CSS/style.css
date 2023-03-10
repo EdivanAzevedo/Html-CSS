@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Goodtimes';
+    src: url('fontes/good_times/good\ times\ rg.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Tipos de format()
+    - opentype (otf)
+    - truetype (ttf)
+    - embedded-opentype
+    -truetype-aat (Apple Advanced Typography)
+    */
+
+h1 {
+    color: lightcyan;
+    font-family: 'Goodtimes';
+    font-size: 3em;
+    text-align: center;
+}
+
+h2,
+h3,
+h4 {
+    font-family: 'Goodtimes';
+    color: lightcyan;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+}
+
+p,
+a {
+    font-family:Arial, Helvetica, sans-serif;
+    color: lightcyan;
+    text-align: center;
+    text-decoration: none;
+}
+
+pre,
+blockquote {
+    color: #00171F;
+}
+
+
+body {
+    background-image: linear-gradient(360deg,#00171F,  #003459, #007EA7, #00A8E8);
+    background-attachment: fixed;
+}
+
+ul,
+ol,
+li,
+dl,
+dt, dd {
+    color: lightcyan;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-left: none;
+    text-align: center;
+    list-style-type: none
+}

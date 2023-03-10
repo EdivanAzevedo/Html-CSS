@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <!--Esta linha adiciona o ícone na aba do site-->
+    <title>Como utilizar videos</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<style>
+    div{
+        padding-left: 400px;
+    }
+</style>
+
+<body>
+    <h1>&#129299 Como utilizar vídeos &#x1F3A5</h1>
+    <h2>Clique <a href="../index.html">AQUI</a> para voltar a página inicial</h2>
+    <h2>Aqui veremos como inserir vídeos hospedados localmente no site</h2>
+    <p>Para adicionar um vídeo. basta utilizar a tag video, você pode utilizar o atributo height para diminuir o tamanho
+        do vídeo, você também pode utilizar o atributo controls para exibir o menu de controle no vídeo. Para adicionar
+        uma thumbnail, você utilizar o atributo poster </p>
+    <div>
+        <video width="500" controls poster="../imagens/imagem-codigo.jpg">
+            <source src="../midia/video-programer.mp4" type="video/mp4">
+            <source src="../midia/Video-Programer.m4v" type="video/mp4">
+            <source src="../midia/Video-Programer.webm" type="video/webm">
+        </video>
+    </div>
+    <p>Contudo tal método não é eficiente, por conta do alto consumo de dados do seu servidor, para solucionar tal
+        problema, o melhor modo de adicionar um vídeo, é adionando um vídeo externo.</p>
+    <h2>O vídeo abaixo é um vídeo externo</h2>
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+</body>
+
+</html>

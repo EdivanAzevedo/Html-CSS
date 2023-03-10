@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <title>Como utilizar links</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <h1>&#129299 Links &#x1F517</h1>
+    <h2>Clique <a href="../index.html">AQUI</a> para voltar a página inicial</h2>
+    <h2>Links externos</h2>
+    <p>Para criar um texto que ao clicar se direciona para outra página, deve-se ancorar o texto, utilizando a tag a.
+    </p>
+    <p>Também pode utilizar os atributos targed e rel dentro da tag para ela abrir em uma nova aba, como no exemplo
+        abaixo:</p>
+    <p>A palavra <a href="https://www.youtube.com">YouTube</a> é uma ancôra para o site do <a
+            href="https://www.youtube.com">YouTube</a>, contudo somente esta palavra do <a
+            href="https://www.youtube.com" target="_blank" rel="external">YouTube</a> irá abrir uma nova aba ao clicar.
+    <p>Vale ressaltar que ao utilizar o atributo rel, serve para dizer a algum mecânismo de busca, o que este link está
+        fazendo, quanl a relaçao dele com a minha página.</p>
+    </p>
+    <h2>Links internos</h2>
+    <p>Para criar um texto que ao clicar te direciona para uma outra página do mesmo site (este), eu devo utilizar como
+        parâmentro em href o nome da minha segunda página.</p>
+    <p>Ao clicar <a href="../paginas/pagina1.html" rel="next">aqui</a>,você será direcionado para uma segunda página
+        deste
+        site.
+    </p>
+    <p>Quando eu não quiser que o mecânismo de busca siga o link, eu utilizo no atributo rel o termo: nofollow</p>
+    <h2>Links para download</h2>
+    <p>Para criar um link para download, deve-se utilizar a tag a para obter o link, e dentro desta tag a, deve-se
+        utilizar os atributos download e o type, sendo que o type deve-se ter como parâmentro application/alguma coisa.
+        Exemplo:</p>
+    <p><a href="../arquivos para download/Webbibliomining.pdf" download="webibliomining.pdf" type="application/pdf">Ao
+            clicar aqui você irá baixar meu WEBIBLIOMINING em tipo pdf</a></p>
+    <p><a href="../arquivos para download/Webbibliomining.rar" download="webibliomining.rar" type="application/rar">Ao
+            clicar aqui você irá baixar meu WEBIBLIOMINING em tipo rar</a></p>
+</body>
+
+</html>

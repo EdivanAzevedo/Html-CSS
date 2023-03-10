@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Browser</title>
+  <Style>
+    html{
+   	font-family: Arial;
+   	display: inline-block;
+   	margin: 0px auto;
+    text-align: center;
+    }
+    h2 {font-size: 3.0rem;}
+    p {font-size: 1.2rem;}
+    .estado (font-size: 1.2 ren;)
+    .forma-estilo{
+    	font-size: 1.5rem
+    	vertical-align: middle;
+    	padding-bottom: 15px;
+    }
+  <Style> 
+</head>
+
+
+<body>
+  <h2>
+    ESP32 - SERVIDOR DE SEGURANÇA RESIDENCIAL EM TEMPO REAL
+  </h2>
+  <p>
+    <i class="fas fa-thermometer-half" style="color:#059e8\"></i>
+    
+    <span class="forma-estilo">
+      Sensor Externo
+    </span>
+    <span id="ladoExterno">
+      %sinal_ext%
+    </span>
+    </p>
+  
+  	<p>
+    <span class="forma-estilo">
+      Sensor Interno
+    </span>
+    <span id="ladoInterno">
+      %sinal_int%
+    </span>
+    
+  </p>
+  <script src="script.js"></script>
+</body>
+    
+<Script>
+setInterval(){
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystate = function(){
+  	if (this.readyState == 4 && this.status == 200){
+  		documente.getElementById("ladoExterno").innerHTML = this.responseText;
+  	}
+  };
+  xhttp.open("GET", "/ladoExterno",true);
+  xhttp.send();
+}, 10000 ) ;
+
+setInterval(){
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystate = function(){
+  	if (this.readyState == 4 && this.status == 200){
+  		documente.getElementById("ladoInterno").innerHTML = this.responseText;
+  	}
+  };
+  xhttp.open("GET", "/ladoInterno",true);
+  xhttp.send();
+}, 10000 ) ;
+</Script>
+</html>
