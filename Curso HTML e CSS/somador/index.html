@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Somador</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get">
+      Soma
+      <p>
+        <label for="in1">Insira o numero 1</label>
+        <input
+          type="number"
+          name="numero1"
+          id="in1"
+          required
+          oninput="isaida.innerHTML = Number(in1.value) + Number(in2.value)"
+        />
+      </p>
+      <p>
+        <label for="in2">Isira o numero 2</label>
+        <input
+          type="number"
+          name="numero2"
+          id="in2"
+          required
+          oninput="isaida.innerHTML = Number(in1.value) + Number(in2.value)"
+        />
+      </p>
+      <p>
+        <label for="isaida">Resultado:</label>
+        <output name="result" id="isaida">0</output>
+      </p>
+    </form>
+    <h1>Teste de Range</h1>
+    <form action="cadastro.php">
+      Verificar o range
+      <p>
+        <label for="irang">Contador</label>
+        <input
+          type="range"
+          name="barra"
+          id="irang"
+          min="1"
+          max="5"
+          oninput="ivalor.innerHTML = Number(irang.value)"
+        />
+        <output name="result" id="ivalor"></output>
+      </p>
+    </form>
+    <h1>Calcula idade</h1>
+    <form action="cadastro.php">
+      Calcula idade
+      <p>
+        <label for="iano">Em que ano você nasceu?</label>
+        <input type="number" name="ano" id="iano" min="1900" max="2023" oninput="calcidade()">
+      </p>
+      <p>
+        <label for="iidade">Sua idade é:</label>
+        <output id="iidade">0</output>
+      </p>
+    </form>
+
+    <script>
+      function calcidade(){
+        let atual = new Date().getFullYear()
+        iidade.innerHTML = Number(atual) - Number(iano.value)
+      }
+    </script>
+
+  </body>
+</html>
