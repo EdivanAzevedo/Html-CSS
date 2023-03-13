@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Not Input</title>
+  </head>
+  <body>
+    <h1>Formulário sem inputs</h1>
+    <form action="cadastro.php" method="post"></form>
+    <p>
+      <label for="iest">
+        <select name="estado" id="iest">
+            <optgroup label="Sudeste">
+                <option value="rj">Rio de Janeiro</option>
+                <option value="sp" selected>São Paulo</option>
+                <option value="mg">Minas Gerais</option>
+            </optgroup>
+            <optgroup label="Nordeste">
+                <option value="ma">Maranhão</option>
+                <option value="pe">Pernanbuco</option>
+                <option value="rn">Rio Grande do Norte</option>
+            </optgroup>
+        </select>
+      </label>
+    </p>
+
+    <p>
+        <label for="iprof">Profissão</label>
+        <input type="text" name="prof" id="iprof" list="listaprof">
+        <datalist id="listaprof">
+            <option value="adm">Administrador</option>
+            <option value="dev">Desenvolverdor</option>
+            <option value="prof">Professor</option>
+        </datalist>
+    </p>
+
+    <p>
+        <label for="imsg">Mensagem</label>
+        <br>
+        <textarea name="msg" id="imsg" cols="10" rows="10"></textarea>
+    </p>
+
+    <p>
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Limpar campos" />
+    </p>
+  </body>
+</html>
