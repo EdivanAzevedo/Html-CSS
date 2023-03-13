@@ -89,24 +89,49 @@
     </form>
 
     <h1>Formulario 3 com emails</h1>
-    <form action="cadastro.php" method="get"  autocomplete="on" >
+    <form action="cadastro.php" method="get" autocomplete="on">
       <fieldset>
         <legend>Dados pessoais</legend>
         <p>
           <label for="iemail">Email</label>
-          <input type="email" id="iemail" required autocomplete="email">
+          <input type="email" id="iemail" required autocomplete="email" />
         </p>
         <p>
           <label for="itell">Telefone</label>
-          <input type="tel" id="itell" autocomplete="tel" pattern="^\d{4}-\d{4}$" required>
+          <input
+            type="tel"
+            id="itell"
+            autocomplete="tel"
+            pattern="^\d{4}-\d{4}$"
+            required
+          />
         </p>
         <p>
-          <input type="submit" value="Enviar">
-          <input type="reset" value="Limpar os campos">
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Limpar os campos" />
         </p>
       </fieldset>
 
+      <h1>Formulario 4</h1>
+      <fieldset>
+        <form action="cadastro.php" method="get" autocomplete="on" ></form>
+          <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imas"><label for="imas">Masculino</label>
+            <input type="radio" name="sexo" id="ifem"><label for="ifem">Feminino</label>
+          </fieldset>
+          <fieldset>
+            <legend> Esportes favoritos </legend>
+            <input type="checkbox" id="ifut"> <label for="ifut">Futebol</label> <br>
+            <input type="checkbox" id="ibas"> <label for="ibas">Basquete</label> <br>
+            <input type="checkbox" id="ivol"> <label for="ivol">Vole</label> <br>
+            <input type="checkbox" id="iten"> <label for="iten">Tênis</label> <br>
+          </fieldset>
+          <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+          </p>
+      </fieldset>
     </form>
-
   </body>
 </html>
