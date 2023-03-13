@@ -26,22 +26,58 @@
       </p>
       <p><input type="submit" value="Enviar" /></p>
     </form>
-    <br>
+    <br />
     <h1>Formulario 2</h1>
     <form action="" method="get" autocomplete="on">
       <p>
         <label for="iusu">Usurário</label>
-        <input type="text" id="iusu" required maxlength="16" autocomplete="off" placeholder="User name" autocomplete="username">
+        <input
+          type="text"
+          id="iusu"
+          required
+          maxlength="16"
+          autocomplete="off"
+          placeholder="User name"
+          autocomplete="username"
+        />
       </p>
       <p>
         <label for="isenha">Senha:</label>
-        <input type="password" id="isenha" required minlength="8" autocomplete="off" placeholder="password" autocomplete="current-password">
+        <input
+          type="password"
+          id="isenha"
+          required
+          minlength="8"
+          autocomplete="off"
+          placeholder="password"
+          autocomplete="current-password"
+        />
       </p>
+
       <p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
+        <label for="inota">Nota:</label>
+        <input type="number" id="inota" required minlength="0" maxlength="10" placeholder="De 0 a 10" step="0.1">
+      </p>
+
+      <p>
+        <label for="iperiodo">Período</label>
+        <input type="month" id="iperiodo">
+      </p>
+
+      <p>
+        <label for="idia">Dia</label>
+        <input type="date" id="idia">
+      </p>
+
+      <p>
+        <label for="ihora">Horário da prova</label>
+        <input type="time" id="ihora">
+      </p>
+
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
       </p>
     </form>
-
   </body>
 </html>
