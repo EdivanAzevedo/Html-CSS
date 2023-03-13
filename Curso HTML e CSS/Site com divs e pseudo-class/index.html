@@ -5,39 +5,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Div e Pseudo-Classes</title>
+    <title>Box Levels</title>
     <style>
         body {
+            background-color: lightblue;
             font-family: Arial, Helvetica, sans-serif;
+            margin: 5px;
         }
 
-        div>p {
-            display: none;
-        }
-
-        div:hover>p {
-            display: block;
-            background-color: red;
-            width: 200px;
+        header {
+            background-color: darkblue;
             color: white;
+            padding: 2px;
+            text-align: center;
+            margin: 0px;
+            border-radius: 10px 10px 0px 0px;
         }
 
-        div:hover {
-            color: red;
-            background-color: black;
-            width: 200px;
+        h2 {
+            background-color: lightseagreen;
+            padding: 5px;
+            margin: 0px;
+            border-radius: 10px 0px;
+        }
+
+        h3 {
+            background-color: lightgreen;
+            padding: 5px;
+            margin: 10px 0px 0px 0px;
+            border-radius: 10px 0px;
+        }
+
+        #principal {
+            border-radius: 0px 0px 0px 0px;
+        }
+
+        #secundario {
+            border-radius: 0px 0px 10px 10px;
+        }
+
+        #artigo {
+            border-radius: 10px 10px 0px 0px;
+
+        }
+
+        footer {
+            background-color: darkgreen;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            padding: 5px;
+            width: 500px;
+            margin: auto;
+            border-radius: 0px 0px 10px 10px;
+        }
+
+        article {
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        article>aside {
+            background-color: rgba(0, 255, 0, 0.521);
+            padding: 2px;
+            font-style: italic;
+        }
+
+        p {
+            background-color: white;
+            padding: 5px;
+        }
+
+        #sombra {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            margin: 25px;
+        }
+
+        a:hover {
+            background-color: white;
+            color: darkblue;
+        }
+
+        footer>p {
+            margin: 0px;
         }
     </style>
 </head>
 
 <body>
-    <h1>Titulo de exemplo</h1>
-    <p>Passe o mouse no texto abaixo</p>
-    <div>Passe o mouse aqui <p>HAHAHAHAHAHAHAHA</p></div>
-    
-    <p>Fim do exemplo</p>
+    <section id="sombra">
+        <header>
+            <h1>Exemplo de box level</h1>
+            <nav>
+                <a href="">Link 1</a><a href="">Link 2</a><a href="">Link 3</a><a href="">Link 4</a>
+            </nav>
+        </header>
+        <main>
+            <h2 id="principal">Titulo 2</h2>
+    </section>
+    <section>
+        <h3 id="secundario">Topico 2.1</h3>
+        <p class="conteudo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ducimus in dolores vel
+            accusamus. Consequatur, quisquam! Molestiae impedit, eos animi nisi earum cum iusto sit quo officia quod
+            modi atque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque maiores tempore consequatur
+            soluta mollitia repellat dicta suscipit voluptas explicabo aliquam! Nobis vel quasi iusto quis ratione,
+            laborum quidem facere quas.</p>
+    </section>
+    <section>
+        <h3>Topico 2.2</h3>
+        <p class="conteudo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo odit rerum delectus. Ad,
+            iste nisi, esse excepturi nostrum tenetur dolorum dignissimos perspiciatis atque perferendis exercitationem
+            ab. Exercitationem labore quam laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consectetur nemo qui, assumenda magni tempora officia repellendus accusamus officiis provident tempore?
+            Odio, nulla? Maiores vitae aliquid voluptate ipsum ab adipisci eveniet. </p>
+    </section>
+    <h2>Titulo 3</h2>
+    <section>
+        <article>
+            <h3 id="artigo" class="conteudo">Titulo do Artigo 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta amet inventore cum, numquam quo
+                nulla officiis eaque repellat! Amet nam nesciunt, voluptates ut nulla explicabo dolore sapiente ratione
+                quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum optio minus omnis qui iste
+                sapiente eos ipsum error provident eum? Voluptatem perspiciatis dolores, dignissimos corporis expedita
+                incidunt eaque nostrum a?</p>
+            <aside>
+                Escrito por: VsCode
+            </aside>
+        </article>
+    </section>
 
+    </main>
+    <footer>
+        Desensolvido por Edivan
+    </footer>
 </body>
 
 </html>
