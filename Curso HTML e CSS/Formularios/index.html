@@ -13,18 +13,35 @@
   </head>
   <body>
     <h1>Meu formulário</h1>
-    <form action="">
+    <form action="cadastro.php">
       <p>
         <label for="inome">Nome: </label
         ><input type="text" name="nome" id="inome" />
       </p>
     </form>
-    <form action="">
+    <form action="cadastro.php" method="POST" autocomplete="off">
       <p>
         <label for="isobrenome">Sobrenome: </label
         ><input type="text" name="sobrenome" id="isobrenome" />
       </p>
       <p><input type="submit" value="Enviar" /></p>
     </form>
+    <br>
+    <h1>Formulario 2</h1>
+    <form action="" method="get" autocomplete="on">
+      <p>
+        <label for="iusu">Usurário</label>
+        <input type="text" id="iusu" required maxlength="16" autocomplete="off" placeholder="User name" autocomplete="username">
+      </p>
+      <p>
+        <label for="isenha">Senha:</label>
+        <input type="password" id="isenha" required minlength="8" autocomplete="off" placeholder="password" autocomplete="current-password">
+      </p>
+      <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+      </p>
+    </form>
+
   </body>
 </html>
